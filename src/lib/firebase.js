@@ -4,13 +4,7 @@ import { getDatabase, ref, push, onValue, remove} from "firebase/database";
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDuq-HVElHvdT__RRWSJa9YxaKhcoGBYRU",
-    authDomain: "budgetmanager-78f2b.firebaseapp.com",
-    databaseURL: "https://budgetmanager-78f2b-default-rtdb.firebaseio.com",
-    projectId: "budgetmanager-78f2b",
-    storageBucket: "budgetmanager-78f2b.appspot.com",
-    messagingSenderId: "600346605361",
-    appId: "1:600346605361:web:32d6f2082f8b888e4c2210"
+    YOUR API KEYS
 };
 
 const app = initializeApp(firebaseConfig);
