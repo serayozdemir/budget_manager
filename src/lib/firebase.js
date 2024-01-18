@@ -4,7 +4,10 @@ import { getDatabase, ref, push, onValue, remove} from "firebase/database";
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    YOUR API KEYS
+     // YOUR API KEYS
+    apiKey: "your-api-key",
+    authDomain: "your-auth-domain",
+    // Add more configuration properties as needed
 };
 
 const app = initializeApp(firebaseConfig);
