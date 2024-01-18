@@ -1,0 +1,236 @@
+@mixin mobile {
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+
+.formContainer{
+    background-color: #8e0045;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .formWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .logo{
+            color: #dd2d4a;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .title{
+            color: #dd2d4a;
+            font-size: 12px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid #dd2d4a;
+            &::placeholder{
+                color: rgb(175, 175, 175);
+            }
+            }
+
+            button{
+                background-color: #800f2f;
+                color:white;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+
+        :link{
+            color: #8e0045;
+        }
+
+        p{
+            color:#dd2d4a;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.dashboard{
+    padding: 50px;
+    background-color: #800f2f;
+    height: 1200px;
+
+    .container_out{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        padding: 50px;
+        width: 500px;
+        border: 1px solid #ccc;
+        height: 450px;
+        margin-left: 320px;
+        align-items: center;
+        border-radius: 20px;
+
+        .container-flex{
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .container_w{
+            background-color: #dd2d4a;
+            padding: 10px;
+            height: 10vh;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        .container-row{
+
+            display: flex;
+
+            .transaction {
+
+                display: flex;
+
+                fieldset{
+                    width: 150px;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    background-color: #dd2d4a;
+                }
+
+                input{
+                    width: 100px;
+                    height: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-left: 25px;
+                }
+
+                select{
+                    width: 100px;
+                    height: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-left: 25px;
+                }
+                
+                .container{
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                button{
+                    background-color: white;
+                    width: 70px;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-left: 35px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                }
+            }
+
+            .container_h{
+
+                display: flex;
+                margin-left: 20px;
+                
+                fieldset{
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    background-color: #dd2d4a;
+                    flex-direction: row-reverse;
+                }
+
+            }
+        }
+        
+        .container_b{
+            background-color: #dd2d4a;
+            display:'flex';
+            width: 150px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+
+            p{
+                margin-left: 10px;
+            }
+
+            span{
+                margin-inline: 10px;
+            }
+            
+        }
+
+        .container_income{
+            background-color: #dd2d4a;
+            display:'flex';
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+
+
+            p{
+                margin-left: 10px;
+            }
+
+            span{
+                margin-inline: 10px;
+            }
+        }
+
+        .container_expense{
+            background-color: #dd2d4a;
+            display:'flex';
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+
+            p{
+                margin-left: 10px;
+            }
+
+            span{
+                margin-inline: 10px;
+            }
+        }  
+    }
+    
+  
+}

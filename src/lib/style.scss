@@ -1,0 +1,210 @@
+@mixin mobile {
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+
+.formContainer{
+    background-color: #8e0045;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .formWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .logo{
+            color: #dd2d4a;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .title{
+            color: #dd2d4a;
+            font-size: 12px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid #dd2d4a;
+            &::placeholder{
+                color: rgb(175, 175, 175);
+            }
+            }
+
+            button{
+                background-color: #800f2f;
+                color:white;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+
+        :link{
+            color: #8e0045;
+        }
+
+        p{
+            color:#dd2d4a;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.dashboard{
+    padding: 50px;
+
+    .container-flex{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .container_w{
+        background-color: #e27396;
+        padding: 10px;
+        height: 10vh;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+
+    .container-row{
+
+        display: flex;
+        justify-content: space-between;
+
+        .transaction {
+
+            display: flex;
+
+            fieldset{
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                background-color: #efcfe3;
+            }
+
+            input{
+                width: 150px;
+                height: 20px;
+                border: 1px solid #ccc;
+            }
+
+            select{
+                width: 150px;
+                height: 20px;
+                border: 1px solid #ccc;
+            }
+            
+            .container{
+                flex-direction: column;
+            }
+
+            button{
+                background-color: #f9b4ed;
+                width: 70px;
+                height: 25px;
+                margin-top: 10px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+            }
+        }
+
+        .container_h{
+
+            display: flex;
+            
+            fieldset{
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                background-color: #efcfe3;
+                flex-direction: row-reverse;
+            }
+
+        }
+    }
+    
+    .container_b{
+        background-color: #ea9ab2;
+        display:'flex';
+        width: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+        p{
+            margin-left: 10px;
+        }
+
+        span{
+            margin-inline: 10px;
+        }
+        
+    }
+
+    .container_income{
+        background-color: #ea9ab2;
+        display:'flex';
+        width: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+        p{
+            margin-left: 10px;
+        }
+
+        span{
+            margin-inline: 10px;
+        }
+    }
+
+    .container_expense{
+        background-color: #ea9ab2;
+        display:'flex';
+        width: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+        p{
+            margin-left: 10px;
+        }
+
+        span{
+            margin-inline: 10px;
+        }
+    }
+  
+}
