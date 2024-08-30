@@ -15,7 +15,7 @@
     "@mui/material": "^5.15.3",
     "@types/react-router-dom": "^5.3.3",
     "firebase": "^10.7.1",
-    "mysql2": "^3.6.5",
+    "mysql2": "^3.9.8",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
